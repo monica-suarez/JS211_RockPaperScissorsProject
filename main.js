@@ -16,6 +16,10 @@ let scissors = "scissors"
 let paper = "paper"
 let rock = "rock"
 const rockPaperScissors = (hand1, hand2) => {
+  hand1 = hand1.toLowerCase();
+  hand2 = hand2.toLowerCase();
+  hand1 = hand1.trim();
+  hand2 = hand2.trim();
   if(hand1 == hand2){
     return "It's a tie!";
   }
