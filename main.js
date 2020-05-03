@@ -29,6 +29,9 @@ const rockPaperScissors = (hand1, hand2) => {
   if(hand2 == rock && hand1 == scissors ||hand2 == paper && hand1 == rock || hand2 == scissors && hand1 == paper){
     return "Hand two wins!";
   }
+  else{
+    return "Take that weapon elsewhere! Approved weapons only!"
+  }
 };
 
 // the first function called in the program to get an input from the user
