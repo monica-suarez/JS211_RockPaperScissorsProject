@@ -76,7 +76,7 @@ if (typeof describe === 'function') {
       assert.equal(rockPaperScissors('Paper', 'SCISSORS'), "Hand two wins!");
       assert.equal(rockPaperScissors('rock ', 'sCiSsOrs'), "Hand one wins!");
     });
-    it('should detect empty string in input', () =>{
+    it('should notify when user presses enter without an entry', () =>{
       assert.equal(rockPaperScissors('', ''), "Try this again. You didn't input anything.");
     });
   });
