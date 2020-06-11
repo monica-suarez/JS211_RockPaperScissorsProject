@@ -63,6 +63,8 @@ if (typeof describe === 'function') {
     });
     it('return text if wrong input is put in', () => {
       assert.equal(rockPaperScissors('rock', 'shrub'), "Take that weapon elsewhere! Approved weapons only!");
+      assert.equal(rockPaperScissors('leadpipe', 'scissors'), "Take that weapon elsewhere! Approved weapons only!");
+      assert.equal(rockPaperScissors('knife', 'gun'), "Take that weapon elsewhere! Approved weapons only!");
     });
     it('should detect which hand won', () => {
       assert.equal(rockPaperScissors('rock', 'paper'), "Hand two wins!");
